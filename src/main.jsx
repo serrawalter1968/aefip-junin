@@ -1,4 +1,4 @@
-import ReactDOM from 'react-dom';
+import * as ReactDOMClient from 'react-dom/client';
 import Header from './componentes/header';
 import './index.css';
 
@@ -12,5 +12,7 @@ const app = (
 );
 
 const container = document.getElementById('root');
+const root = ReactDOMClient.createRoot(container);
 
-ReactDOM.render(app, container);
+root.render(app);
+-
