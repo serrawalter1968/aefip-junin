@@ -1,6 +1,6 @@
 import './logo.css';
 
-export const Logo = () => {
+const Logo = () => {
 	return (
 		<img
 			className='logo'
@@ -11,3 +11,5 @@ export const Logo = () => {
 		/>
 	);
 };
+
+export default Logo;
