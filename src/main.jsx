@@ -1,9 +1,16 @@
-import ReactDOM from 'react-dom/client';
-import App from './App.jsx';
+import ReactDOM from 'react-dom';
+import Header from './componentes/header';
 import './index.css';
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-	<React.StrictMode>
-		<App />
-	</React.StrictMode>
+const lenguaje = 'ReactJS';
+
+const app = (
+	<>
+		<Header />
+		<p>Aplicación desarrollada en {lenguaje}</p>
+	</>
 );
+
+const container = document.getElementById('root');
+
+ReactDOM.render(app, container);
