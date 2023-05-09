@@ -1,17 +1,9 @@
 import * as ReactDOMClient from 'react-dom/client';
-import Header from './componentes/header';
-import './index.css';
+import App from './App';
 
-const lenguaje = 'ReactJS';
-
-const app = (
-	<>
-		<Header />
-		<p>Aplicación desarrollada en {lenguaje}</p>
-	</>
-);
+import './styles/index.css';
 
 const container = document.getElementById('root');
 const root = ReactDOMClient.createRoot(container);
 
-root.render(app);
+root.render(<App />);
