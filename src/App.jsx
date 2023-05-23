@@ -1,6 +1,8 @@
 import AffiliateList from './components/AffiliateList';
 import Header from './components/Header';
 
+const AFFILIATES1 = [];
+
 const AFFILIATES = [
 	{
 		nombre: 'Walter José',
@@ -18,7 +20,7 @@ const AFFILIATES = [
 		apellido: 'Francescutti',
 		afiliado: true,
 		activo: false,
-		legajo: 3294216,
+		legajo: 3119130,
 		dni: 20032095,
 		telpart: 2364601322,
 		teltrab: 23624407171,
@@ -29,7 +31,7 @@ const AFFILIATES = [
 		apellido: 'Varela',
 		afiliado: false,
 		activo: true,
-		legajo: 3294216,
+		legajo: 3023023,
 		dni: 20032095,
 		telpart: 2364601322,
 		teltrab: 23624407171,

@@ -1,10 +1,11 @@
+import AffiliateRow from './AffiliateRow';
+
 const AffiliateList = ({ affiliates }) => {
-	return (
-		<div className='affiliates'>
-			<h2>Listado de Afiliados</h2>
-			<p>{affiliates[0].nombre}</p>
-		</div>
-	);
+	if (!affiliates.length) return <p>No hay Afiliados ... </p>;
+
+	return affiliates.map(affiliate => (
+		<AffiliateRow key={affiliate.legajo} {...affiliate} />
+	));
 };
 
 export default AffiliateList;
